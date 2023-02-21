@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Youtube
+
+  Created by Ahmed Mohiy on 21/02/2023.
+  
+*/
+
+//MARK: - Main view
+"tapbar_home" = "Home";
+"tapbar_shorts" = "Shorts";
+"tapbar_subscriptions" = "Subscriptions";
+"tapbar_library" = "Library";
