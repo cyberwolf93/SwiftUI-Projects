@@ -17,6 +17,7 @@
 		8A151E1F29A501830081B0F5 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A151E1E29A501830081B0F5 /* UploadView.swift */; };
 		8A151E2129A5019F0081B0F5 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A151E2029A5019F0081B0F5 /* SubscriptionsView.swift */; };
 		8A151E2329A501BE0081B0F5 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A151E2229A501BE0081B0F5 /* LibraryView.swift */; };
+		8A151E2529A52F820081B0F5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A151E2429A52F820081B0F5 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		8A151E1E29A501830081B0F5 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
 		8A151E2029A5019F0081B0F5 /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
 		8A151E2229A501BE0081B0F5 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		8A151E2429A52F820081B0F5 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		8A151E0429A4E8140081B0F5 /* Youtube */ = {
 			isa = PBXGroup;
 			children = (
+				8A151E2629A52FB60081B0F5 /* Extensions */,
 				8A151E1329A4E84E0081B0F5 /* MainViews */,
 				8A151E0529A4E8140081B0F5 /* YoutubeApp.swift */,
 				8A151E1429A4F4290081B0F5 /* Resources */,
@@ -99,6 +102,14 @@
 				8A151E1929A4F44D0081B0F5 /* Localizable.strings */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		8A151E2629A52FB60081B0F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A151E2429A52F820081B0F5 /* StringExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				8A151E1B29A501120081B0F5 /* HomeView.swift in Sources */,
 				8A151E1F29A501830081B0F5 /* UploadView.swift in Sources */,
 				8A151E1D29A5015F0081B0F5 /* ShortsView.swift in Sources */,
+				8A151E2529A52F820081B0F5 /* StringExtension.swift in Sources */,
 				8A151E2129A5019F0081B0F5 /* SubscriptionsView.swift in Sources */,
 				8A151E0829A4E8140081B0F5 /* MainView.swift in Sources */,
 				8A151E0629A4E8140081B0F5 /* YoutubeApp.swift in Sources */,

@@ -11,3 +11,19 @@
 "tapbar_shorts" = "Shorts";
 "tapbar_subscriptions" = "Subscriptions";
 "tapbar_library" = "Library";
+
+// MARK: - Library Screen
+"library_history" = "History";
+"library_view_all" = "View all";
+"library_your_videos" = "Your videos";
+"library_downloads" = "Downloads";
+"library_recommendations" = "recommendations";
+"library_your_movies" = "Your movies";
+"library_playlist" = "Playlist";
+"library_recently_added" = "Recently added";
+"library_new_playlist" = "New playlist";
+"library_watch_later" = "Watch later";
+"library_unwatched_videos" = "unwatched videos";
+"library_liked_videos" = "Liked videos";
+"library_videos" = "videos";
+
