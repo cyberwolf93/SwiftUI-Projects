@@ -75,8 +75,8 @@ struct LibraryView: View {
                             Spacer()
                             Image(systemName: "ellipsis")
                                 .font(.body)
-                                .transformEffect(.init(rotationAngle: CGFloat.pi/2))
-                                .offset(x: 20)
+                                .rotationEffect(.degrees(-90),anchor: .topTrailing)
+                                
                         }
                         
                         Text("Germany Cards")

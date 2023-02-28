@@ -37,8 +37,7 @@ class PlayerViewUIKit: UIView {
         playerLayer?.frame = self.bounds
         playerLayer?.videoGravity = .resizeAspectFill
         
-        print(self.frame)
-        playerLayer?.backgroundColor = UIColor.green.cgColor
+        playerLayer?.backgroundColor = UIColor.clear.cgColor
         self.layer.addSublayer(playerLayer!)
         
     }

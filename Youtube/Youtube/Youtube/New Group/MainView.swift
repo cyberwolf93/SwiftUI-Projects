@@ -39,9 +39,9 @@ struct MainView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            ScrollView {
-                currentPage
-            }
+            
+            currentPage
+            
             Divider()
             HStack(alignment: .center) {
                 ForEach(tabbarItems) { item in
@@ -93,7 +93,7 @@ struct MainView: View {
     @ViewBuilder var currentPage: some View {
         switch (pageType) {
         case .home:
-            HomeView()
+            HomeView(viewModel: HomeViewViewModel())
         case .shorts:
             ShortsView()
         case .upload:
