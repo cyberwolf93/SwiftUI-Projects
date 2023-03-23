@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct ContentView: View {
     let viewModel = ContentViewViewModel()
     @State var isRecording = false
+    @State var photoLibraryPresented = false
+    @State var selectedItems: [PhotosPickerItem] = []
     
     var body: some View {
         GeometryReader { proxy in
@@ -19,17 +22,23 @@ struct ContentView: View {
                 
                 HStack {
                     Button {
-                        // TODO:
+//                        photoLibraryPresented.toggle()
                     } label: {
-                        Image(systemName: "photo.stack")
-                            .padding(10)
-                            .background(ButtonBackgroundCircle())
+                        PhotosPicker(selection: $selectedItems) {
+                            Image(systemName: "photo.stack")
+                                .padding(10)
+                                .background(ButtonBackgroundCircle())
+                        }
                     }
+                    .disabled(isRecording)
+                    .opacity(isRecording ? 0.1 : 1)
+                    
                     
                     Spacer()
                     
                     Button {
                         isRecording.toggle()
+                        viewModel.startRecording()
                     } label: {
                         Circle()
                             .strokeBorder(.white, lineWidth: 6, antialiased: true)
@@ -51,13 +60,15 @@ struct ContentView: View {
                     Spacer()
                     
                     Button {
-                        // TODO:
+                        viewModel.changeCamera()
                     } label: {
                         Image(systemName: "arrow.triangle.2.circlepath.camera")
                             .padding(10)
                             .background(ButtonBackgroundCircle())
                         
                     }
+                    .disabled(isRecording)
+                    .opacity(isRecording ? 0.1 : 1)
 
                 }
                 .frame(maxHeight: 100)
@@ -66,9 +77,9 @@ struct ContentView: View {
                 .font(.system(size: 30))
             }
         }
-        
-        
+        .preferredColorScheme(.light)
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
